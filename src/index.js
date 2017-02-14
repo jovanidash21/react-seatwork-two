@@ -1,5 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/App';
+import Counter from './components/Counter/Index';
 
-render(<App name='World'/>, document.getElementById('root'));
+render(
+    <div>
+        <Counter />
+    </div>
+    , document.getElementById('root'));
