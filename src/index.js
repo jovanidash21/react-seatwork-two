@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import Counter from './components/Counter/Index';
 import InstantSearch from './components/InstantSearch/Index';
+import OrderForm from './components/OrderForm/Index';
 
 const libraries = [
     { name: 'Backbone.js', url: 'http://documentcloud.github.io/backbone/' },
@@ -20,9 +21,17 @@ const libraries = [
     { name: 'Koa', url: 'http://koajs.com/' },
 ];
 
+const services = [
+    { name: 'Web Development', price: 300 },
+    { name: 'Design', price: 400 },
+    { name: 'Integration', price: 250 },
+    { name: 'Training', price: 220 }
+];
+
 render(
     <div>
         <Counter />
-        <InstantSearch libraries={libraries}/>
+        <InstantSearch libraries={libraries} />
+        <OrderForm services={services} />
     </div>
     , document.getElementById('root'));

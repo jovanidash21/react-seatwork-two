@@ -1,8 +1,17 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body
+{
+  overflow-y: scroll;
 }
-
-a {
-  color: #00B7FF;
+.service-selector h4
+{
+  padding: 10px;
+  cursor: pointer;
+}
+.service-selector h4:hover
+{
+  background-color: #eeeeee;
+}
+.service-selector h4.active
+{
+  background-color: #00ffff;
 }
